@@ -7,9 +7,10 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: hello goudan
+        id: hello-goudan
         uses: weijiany/hello-world-docker-action@0.1.0
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: 'Goudan'
 
       - name: Run demo script
         run:  ./demo.sh
