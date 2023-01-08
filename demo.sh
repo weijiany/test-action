@@ -2,7 +2,7 @@
 
 set -e
 
-echo "time=${{ steps.hello-goudan.outputs.time }}"
+echo "time=${1}"
 docker volume create demo
 docker build -t test-action .
 docker run --rm --mount src=demo,dst=/demo test-action
