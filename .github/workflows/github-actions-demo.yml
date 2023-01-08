@@ -10,6 +10,6 @@ jobs:
         run:  ./demo.sh
       
       - name: hello goudan
-        uses: weijiany/hello-world-docker-action
+        uses: weijiany/hello-world-docker-action@0.1.0
         with:
           who-to-greet: 'Mona the Octocat'
