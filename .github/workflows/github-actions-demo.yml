@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: hello goudan
+      - name: shell check
         id: hello-goudan
         uses: weijiany/shellcheck-action@0.1.0
         with:
