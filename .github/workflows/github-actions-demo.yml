@@ -8,7 +8,7 @@ jobs:
 
       - name: hello goudan
         id: hello-goudan
-        uses: weijiany/hello-world-docker-action@0.1.0
+        uses: weijiany/hello-world-docker-action@0.2.0
         with:
           who-to-greet: '.'
 
