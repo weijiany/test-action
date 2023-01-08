@@ -13,4 +13,4 @@ jobs:
           who-to-greet: 'Goudan'
 
       - name: Run demo script
-        run:  ./demo.sh ${{ steps.hello-goudan.outputs.time }}
+        run:  ./demo.sh "${{ steps.hello-goudan.outputs.time }}"
