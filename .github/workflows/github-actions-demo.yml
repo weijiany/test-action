@@ -6,6 +6,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Configure AWS credentials from Test account
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: arn:aws:iam::494526681395:role/goudan-for-github-action
+          aws-region: ap-east-1
+
+      - name: push to ECR
+        run: ./auto/push.sh
+
       - name: shell check
         id: hello-goudan
         uses: weijiany/shellcheck-action@0.1.0
