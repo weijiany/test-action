@@ -1,11 +1,11 @@
 name: GitHub Actions
 on: [push]
+permissions:
+  id-token: write
+  contents: read
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: write
     steps:
       - uses: actions/checkout@v2
 
