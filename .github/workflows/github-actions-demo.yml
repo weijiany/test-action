@@ -35,3 +35,7 @@ jobs:
 
       - name: Run demo script
         run:  ./demo.sh "${{ steps.hello-goudan.outputs.time }}"
+  Job-2:
+    steps:
+      - name: test concurrent
+        run: echo hello world.
