@@ -1,0 +1,11 @@
+name: Another Workflow.
+on:
+  workflow_run:
+    workflows: [ 'Test Another Branch' ]
+    types: [ completed ]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test another workflow
+        run: echo foo and bar.

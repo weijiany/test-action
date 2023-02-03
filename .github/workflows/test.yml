@@ -1,4 +1,4 @@
-name: Test Another Branch.
+name: Test Another Branch
 on: [push]
 jobs:
   test:
