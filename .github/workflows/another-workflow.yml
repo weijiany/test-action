@@ -3,6 +3,7 @@ on:
   workflow_run:
     workflows: [ 'Test Another Branch.' ]
     types: [ completed ]
+    branches: ['*']
 jobs:
   test:
     runs-on: ubuntu-latest
