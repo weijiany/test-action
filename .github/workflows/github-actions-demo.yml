@@ -36,6 +36,7 @@ jobs:
       - name: Run demo script
         run:  ./demo.sh "${{ steps.hello-goudan.outputs.time }}"
   Job-2:
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
       - name: test concurrent
