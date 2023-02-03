@@ -1,0 +1,8 @@
+name: GitHub Actions
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test concurrent
+        run: echo this is a test.
