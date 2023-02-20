@@ -7,6 +7,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: not-existing
+
       - uses: actions/checkout@v2
 
       - name: Configure AWS credentials from Test account
