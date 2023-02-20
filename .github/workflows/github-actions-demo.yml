@@ -7,9 +7,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: not-existing
-
       - uses: actions/checkout@v2
+
+      - run: error hello world
 
       - name: Configure AWS credentials from Test account
         uses: aws-actions/configure-aws-credentials@v1-node16
