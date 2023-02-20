@@ -1,0 +1,16 @@
+name: Finally Action
+on:
+  workflow_run:
+    workflows: ["GitHub Actions"]
+    types: [completed]
+    branches:
+      - '**'
+jobs:
+  Explore-GitHub-Actions:
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: echo hello world
+
